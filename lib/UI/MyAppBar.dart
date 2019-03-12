@@ -12,10 +12,9 @@ class MyAppBar{
 
       title:new Text("Flutter Widgets",
 
-        style: new TextStyle(
-
-        color: Colors.black,
-        fontSize: 17,
+          style: new TextStyle(
+          color: Colors.black,
+          fontSize: 17,
 
           ),
       ),
