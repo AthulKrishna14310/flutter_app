@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MyListTile{
-
   ListTile _listTileButton=new ListTile(
     leading: Icon(Icons.add_box),
-    trailing: Icon(Icons.arrow_right),
+    trailing: Icon(Icons.arrow_right,color: Colors.blue),
+
     title: Text("Button"),
   );
 
@@ -43,7 +43,7 @@ class MyListTile{
   ListTile _listTileRadioButton=new ListTile(
     leading: Icon(Icons.radio_button_checked),
     trailing: Icon(Icons.arrow_right),
-    title: Text("Radio Button"),
+    title: Text("RadioButton"),
   );
   ListTile _listTileCheckBox=new ListTile(
     leading: Icon(Icons.check_box),
@@ -58,12 +58,12 @@ class MyListTile{
   ListTile _listTileProgressBar=new ListTile(
     leading: Icon(Icons.rotate_left),
     trailing: Icon(Icons.arrow_right),
-    title: Text("Progress Bar"),
+    title: Text("ProgressBar"),
   );
   ListTile _listTileSeekBar=new ListTile(
     leading: Icon(Icons.add_box),
     trailing: Icon(Icons.arrow_right),
-    title: Text("Seek Bar"),
+    title: Text("SeekBar"),
   );
   ListTile _listTileSwitch=new ListTile(
     leading: Icon(Icons.add_box),
@@ -80,34 +80,125 @@ class MyListTile{
     trailing: Icon(Icons.arrow_right),
     title: Text("AutoCompleteTextView"),
   );
+
   ListTile _listTileCheckedTextView=new ListTile(
     leading: Icon(Icons.short_text),
     trailing: Icon(Icons.arrow_right),
     title: Text("CheckedTextView"),
   );
-/*  ListTile _listTileTextSwitcher;
-  ListTile _listTileImageSwitcher;
-  ListTile _listTileAdaptViewFlipper;
-  ListTile _listTileDatePicker;
-  ListTile _listTileTimePicker;
-  ListTile _listTileChronometer;
-  ListTile _listTileToast;
-  ListTile _listTilePositionToast;
-  ListTile _listTileCustomToast;
-  ListTile _listTileListView;
-  ListTile _listTileCustomListView;
-  ListTile _listTileExpandableListView;
-  ListTile _listTileGridView;
-  ListTile _listTileWebView;
-  ListTile _listTileSearchView;
-  ListTile _listTileTextClock;
-  ListTile _listTileTextInputEditText;
-  ListTile _listTileFloatingActionButton;
-  ListTile _listTileSnackBar;
-  ListTile _listTileBottomNavigation;
-  ListTile _listTileBottomSheets;
-  ListTile _listTileNavigationDrawers;
-*/
+
+
+  ListTile _listTileTextSwitcher=new ListTile(
+    leading: Icon(Icons.text_fields),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("TextSwitcher"),
+  );
+  ListTile _listTileImageSwitcher=new ListTile(
+    leading: Icon(Icons.image),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("ImageSwitcher"),
+  );
+  ListTile _listTileAdaptViewFlipper=new ListTile(
+    leading: Icon(Icons.image),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("ViewFlipper"),
+  );
+  ListTile _listTileDatePicker=new ListTile(
+    leading: Icon(Icons.calendar_today),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("DatePicker"),
+  );
+  ListTile _listTileTimePicker=new ListTile(
+    leading: Icon(Icons.av_timer),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("TimePicker"),
+  );
+  ListTile _listTileChronometer=new ListTile(
+    leading: Icon(Icons.timer),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("TextSwitcher"),
+  );
+  ListTile _listTileToast=new ListTile(
+    leading: Icon(Icons.short_text),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("Toast"),
+  );
+  ListTile _listTilePositionToast=new ListTile(
+    leading: Icon(Icons.short_text),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("PositionToast"),
+  );
+  ListTile _listTileCustomToast=new ListTile(
+    leading: Icon(Icons.image),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("CustomToast"),
+  );
+  ListTile _listTileListView=new ListTile(
+    leading: Icon(Icons.list),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("ListView"),
+  );
+  ListTile _listTileCustomListView=new ListTile(
+    leading: Icon(Icons.view_list),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("CustomListView "),
+  );
+  ListTile _listTileExpandableListView=new ListTile(
+    leading: Icon(Icons.view_list),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("ExpandableListView"),
+  );
+  ListTile _listTileGridView=new ListTile(
+    leading: Icon(Icons.grid_on),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("GridView"),
+  );
+  ListTile _listTileWebView=new ListTile(
+    leading: Icon(Icons.web),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("WebView"),
+  );
+  ListTile _listTileSearchView=new ListTile(
+    leading: Icon(Icons.search),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("SearchView"),
+  );
+  ListTile _listTileTextClock=new ListTile(
+    leading: Icon(Icons.access_time),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("TextClock"),
+  );
+  ListTile _listTileTextInputEditText=new ListTile(
+    leading: Icon(Icons.text_fields),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("EditText"),
+  );
+  ListTile _listTileFloatingActionButton=new ListTile(
+    leading: Icon(Icons.add_circle),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("FloatingActionButton"),
+  );
+  ListTile _listTileSnackBar=new ListTile(
+    leading: Icon(Icons.short_text),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("SnackBar"),
+  );
+  ListTile _listTileBottomNavigation=new ListTile(
+    leading: Icon(Icons.navigation),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("BottomNavigation"),
+  );
+  ListTile _listTileBottomSheets=new ListTile(
+    leading: Icon(Icons.border_bottom),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("BottomSheet"),
+  );
+  ListTile _listTileNavigationDrawers=new ListTile(
+    leading: Icon(Icons.menu),
+    trailing: Icon(Icons.arrow_right),
+    title: Text("NavigationDrawer"),
+  );
+
   ListTile get listTileButton => _listTileButton;
 
   ListTile get listTileTextView => _listTileTextView;
@@ -117,7 +208,8 @@ class MyListTile{
   ListTile get listTileImageView => _listTileImageView;
 
   ListTile get listTileImageButton => _listTileImageButton;
-/*
+
+
   ListTile get listTileNavigationDrawers => _listTileNavigationDrawers;
 
   ListTile get listTileBottomSheets => _listTileBottomSheets;
@@ -161,7 +253,7 @@ class MyListTile{
   ListTile get listTileImageSwitcher => _listTileImageSwitcher;
 
   ListTile get listTileTextSwitcher => _listTileTextSwitcher;
-*/
+
   ListTile get listTileCheckedTextView => _listTileCheckedTextView;
 
 
