@@ -8,13 +8,11 @@ class Home extends StatelessWidget {
    MyAppBar myAppBar;
    MyListView myListView;
 
-   Home(){
-    myAppBar=new MyAppBar();
-    myListView=new MyListView();
-   }
+   @override
+   Widget build(BuildContext context) {
 
-  @override
-  Widget build(BuildContext context) {
+     myAppBar=new MyAppBar();
+     myListView=new MyListView(context);
 
     return new Scaffold(
       appBar:myAppBar.initiateAppBar(),

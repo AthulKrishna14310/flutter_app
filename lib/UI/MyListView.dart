@@ -5,12 +5,19 @@ class MyListView {
 
   ListView    listView;
   MyListTile  myListTile;
+  BuildContext context;
 
-  MyListView(){
-      myListTile=new MyListTile();
-      listView=new  ListView(
+
+
+  MyListView(BuildContext context){
+          this.context=context;
+
+          myListTile=new MyListTile(context);
+          myListTile.initiateListTiles();
+
+          listView=new  ListView(
       children: <Widget>[
-       myListTile.listTileImageButton,
+        myListTile.listTileImageButton,
         myListTile.listTileToggleButton,
         myListTile.listTileImageView,
         myListTile.listTileEditText,
